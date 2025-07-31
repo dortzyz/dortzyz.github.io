@@ -1,0 +1,262 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+header {
+    background-color: #312e3b;
+    color: white;
+    padding: 1rem 1.5rem;
+    /* margin: 0rem auto; */
+    width: 100%;
+    /* margin: 0.5rem; */
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* barra de navegacion ------------------------------------*/
+.navegacion {
+    font-size: 14px;
+    font-weight: 400;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 0.4rem;
+
+    /* overflow-x: scroll;
+    scrollbar-color: rgb(198, 196, 196) #312e3b; */
+
+    /* height: fit-content; */
+    /* border: solid 0px #8c8d8d; */
+    padding: 20px 0px;
+
+    /* width: fit-content;
+    margin: 0 auto; */
+
+    background-color: #000000;
+}
+
+.scroll-nav {
+    overflow-x: scroll;
+    scrollbar-color: rgb(198, 196, 196) #312e3b;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navegacion {
+        justify-content: flex-start;
+    }
+    
+}
+
+.nav-card, .navegacion div a {
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+
+    /* background-color: rgb(64, 75, 171); */  
+    border-radius: 10px;
+
+    min-width: fit-content;
+
+}
+
+.nav-card:link, .navegacion div a:link{
+    background-color: rgb(62, 62, 62);  
+    color: #ffffff;
+}
+
+.nav-card:hover, .navegacion div a:hover{
+    background-color: #4647a4;
+    color: #ffffff;
+}
+
+.nav-card:active, .navegacion div a:active{
+    background-color: #dee75c;
+    color: #000000;
+}
+
+.nav-card-title {
+    padding: 1rem;
+    align-content: center;
+}
+
+/* header .nav-sticky {
+    position: sticky;
+    top: 0;
+    padding: auto;
+
+} */
+
+/* .navegacion div a {
+    padding: 1rem;
+    align-content: center;
+} */
+
+/* .nav-blank {
+    margin-right: 0.4rem;
+} */
+
+/* secciones -----------------------------------------------*/
+.section-container {
+    margin: 1.5rem 1rem;
+    padding-top: 0.5rem;
+    background-color: rgb(10, 152, 107);
+}
+
+.titulo-index{
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+
+    margin: 0.25rem 0rem 0.7rem;
+    background-color: #525252;
+
+    padding: 1rem 1rem;
+
+}
+
+.style-border {
+    border-radius: 20px;
+}
+
+.grid-section {
+    background-color: rgb(196, 196, 196);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: start;
+}
+
+@media only screen and (max-width:1000px) {
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+.grid-section-card {
+    background-color: red;
+    justify-items: center;
+
+    padding: 1rem;
+    margin: 0rem auto;
+    max-width: fit-content;
+    height: fit-content;
+}
+
+.grid-section-card:hover {
+    background-color: #4647a4;
+}
+
+.card-image {
+    background-color: #dee75c;
+    padding: 5px;
+    /* margin: auto; */
+    /* max-width: 250px; */
+   /*  width: 100px; */
+    /* margin: 0rem auto; */
+}
+
+.card-content {
+    max-width: 250px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    left: auto;
+}
+
+
+/* css de referencia ------------------------------------------------ */
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+section article {
+    transition: all 0.4s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    padding: 0.5rem 0;
+
+    cursor: pointer;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+section article h2, section article p {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #222;
+    padding: 3rem;
+    color: white;
+}
+
+.contact {
+    width:fit-content;
+    margin: 0 auto;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+footer p {
+    margin: 0;
+    float: left;
+}
+
+footer a:hover {
+    color: aqua;
+}
+
+.top {
+    float: right;
+    margin: 0;
+    padding: 0;
+    /* display: inline-block; */
+}
+
+.separador {
+    margin: 0.5rem auto;
+}
+
+.fix-img {
+    /* margin: -150px 200px 0 0px; */
+    background-color: #848484;
+    /*  width: 400px;*/
+    max-width: 250px;
+    object-fit: cover;
+    justify-self: center;
+    /* object-position: 50% 50%; */
+}
+
+.img {
+    /* width: 400px;
+    height: 400px;*/
+    background-color: #000000;
+}
+
