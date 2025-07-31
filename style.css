@@ -10,9 +10,9 @@ body {
 .nav-box { /* header */
     background-color: #312e3b;
     color: white;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     /* margin: 0rem auto; */
-    width: 100%;
+    /* width: 100%; */
     /* margin: 0.5rem; */
 }
 
@@ -40,7 +40,7 @@ body {
 
     /* height: fit-content; */
     /* border: solid 0px #8c8d8d; */
-    padding: 20px 0px;
+    padding: 8px 0px 14px;
 
     /* width: fit-content;
     margin: 0 auto; */
@@ -89,7 +89,7 @@ body {
 }
 
 .nav-card-title {
-    padding: 1rem;
+    padding: 0.8rem;
     align-content: center;
 }
 
