@@ -112,7 +112,7 @@ body {
 /* secciones -----------------------------------------------*/
 .section-container {
     margin: 1.5rem 1rem;
-    padding-top: 0.5rem;
+    padding-top: 8rem; /* espaciado para la barra de navegacion */
     background-color: rgb(10, 152, 107);
 }
 
@@ -177,9 +177,10 @@ body {
 }
 
 .sticky {
-    position: sticky;
+    position: fixed;
     top: 0px;
-    left: auto;
+    left: 0px;
+    right: 0px;
 }
 
 
