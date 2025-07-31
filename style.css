@@ -7,7 +7,7 @@ body {
     background-color: #efefef;
 }
 
-header {
+header .header-style {
     background-color: #312e3b;
     color: white;
     padding: 1rem 1.5rem;
