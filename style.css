@@ -26,6 +26,14 @@ body {
     margin: 0rem;
 }
 
+/*  Estilos en solitario */
+.fixed-box {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
 /* barra de navegacion ------------------------------------*/
 .navegacion {
     font-size: 14px;
@@ -174,12 +182,7 @@ body {
     max-width: 250px;
 }
 
-.sticky {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-}
+
 
 
 /* css de referencia ------------------------------------------------ */
