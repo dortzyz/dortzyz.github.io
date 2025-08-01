@@ -34,6 +34,10 @@ body {
     right: 0px;
 }
 
+.shadow-box {
+    box-shadow: 0 0.4rem 0.9rem rgba(31, 31, 31, 0.689);
+}
+
 /* barra de navegacion ------------------------------------*/
 .navegacion {
     font-size: 14px;
