@@ -1,0 +1,1 @@
+/* test de ventana para catalogo */
