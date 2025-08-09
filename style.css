@@ -59,18 +59,18 @@ body {
     padding: 0.5rem 0.9rem 0.9rem;
 
     background-color: #000000;
+    overflow-x: auto;
 }
 
 .scroll-nav {
-    overflow-x: scroll;
+   /*  overflow-x: scroll; */
     scrollbar-color: rgb(198, 196, 196) #312e3b;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
     .navegacion {
         justify-content: flex-start;
     }
-    
 }
 
 .nav-card, .navegacion div a {
