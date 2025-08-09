@@ -19,6 +19,7 @@ body {
     padding: 0.5rem 1rem;
     width: 100%;
     height: fit-content;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .title-prime { /* header h1 */
@@ -79,7 +80,7 @@ body {
     text-align: center;
 
     /* background-color: rgb(64, 75, 171); */  
-    border-radius: 10px;
+    border-radius: 20px;
 
     min-width: fit-content;
 
