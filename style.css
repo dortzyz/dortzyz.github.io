@@ -20,18 +20,24 @@ body {
     width: auto;
     height: fit-content;
     border-radius: 0px 0px 20px 20px;
+    z-index: 1;
 }
 
 .title-prime { /* header h1 */
+    background-color: #312e3b;
+    color: white;
     font-size: 2rem;
     text-align: center;
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0.5rem 0rem;
+    margin: auto;
+
+    z-index: 5;
+    position: relative;
 }
 
 /*  Estilos en solitario */
 .fixed-box {
-    position: fixed;
+    position: sticky;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -39,6 +45,12 @@ body {
 
 .shadow-box {
     box-shadow: 0 0.4rem 0.9rem rgba(31, 31, 31, 0.689);
+}
+
+.block-void {
+    height: 120px;
+    width: auto;
+    background-color: rgba(193, 88, 88, 0.5);
 }
 
 /* barra de navegacion ------------------------------------*/
@@ -140,7 +152,7 @@ body {
 /* secciones -----------------------------------------------*/
 .section-container {
     margin: 1.5rem 1rem;
-    padding-top: 8rem; /* espaciado para la barra de navegacion */
+    padding-top: 5rem; /* espaciado para la barra de navegacion */
     background-color: rgb(10, 152, 107);
 }
 
