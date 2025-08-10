@@ -17,7 +17,7 @@ body {
     background-color: #312e3b;
     color: white;
     padding: 0.5rem 1rem;
-    width: 100%;
+    width: auto;
     height: fit-content;
     border-radius: 0px 0px 20px 20px;
 }
@@ -42,16 +42,31 @@ body {
 }
 
 /* barra de navegacion ------------------------------------*/
+.nav-container {
+    display: grid;
+    width: auto;
+   /*  margin: 0px 0px 0px 200px; */
+    grid-template-columns: 0.5fr auto 0.2fr;
+}
+
+.space-box{
+    /* display: inline-block; */
+    /* width: 20px; */
+    background-color: #dee75c;
+}
+
+
 .navegacion {
     font-size: 14px;
     font-weight: 400;
 
-    width: 100%;
+    width: auto;
+    /* min-width: auto; */
     height: min-content;
     
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     flex-wrap: nowrap;
     align-items: flex-start;
     gap: 0.4rem;
@@ -67,11 +82,11 @@ body {
     scrollbar-color: rgb(198, 196, 196) #312e3b;
 }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
     .navegacion {
         justify-content: flex-start;
     }
-}
+} */
 
 .nav-card, .navegacion div a {
     display: flex;
