@@ -14,13 +14,14 @@ body {
 /* test de branch */
 
 .nav-box { /* header */
-    background-color: #312e3b;
+    /* background-color: #312e3b; */
+    background-color: rgba(49, 46, 59, .5);
     color: white;
     padding: 0.5rem 1rem;
     width: auto;
     height: fit-content;
     border-radius: 0px 0px 20px 20px;
-    z-index: 1;
+    z-index: 99;
 }
 
 .title-prime { /* header h1 */
@@ -31,7 +32,7 @@ body {
     padding: 0.5rem 0rem;
     margin: auto;
 
-    z-index: 5;
+    z-index: 100;
     position: relative;
 }
 
@@ -188,9 +189,16 @@ body {
     align-items: start;
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1000px) and (min-width:670px)  {
     .grid-section {
         grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .grid-section {
+        grid-template-columns: repeat(1, 1fr);
         
     }
 }
@@ -213,6 +221,8 @@ body {
 .card-image {
     background-color: rgba(240, 240, 240, 0.5);
     padding: 5px;
+
+    position: relative;
     /*  max-width: 100%; /* para tamaño de la imagen responsive*/
     /* width: auto; */ 
     /* height: auto; */
@@ -225,7 +235,30 @@ body {
 div.card-image img {
     max-width: 100%; /* para tamaño de la imagen responsive*/
     background-color: #4647a4;
-    border-radius: 1.5rem;
+    border-radius: 1.5rem; /* borde redondeado de la imagen */
+
+    position: relative;
+}
+
+div.card-image span{ /* div.box-img-label */
+   /*  width: fit-content; */
+   /*  height: fit-content; */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 1);
+
+    position: absolute ;
+    z-index: 2;
+    left: 5px;
+    bottom: 10px;
+    padding: 0rem;
+    border-radius: 0 0 0 1.5rem; /* borde para esquina igual a .card-img img */
+}
+
+div.card-image p { /* maximo 21 caracteres */
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
 }
 
 .card-content {
