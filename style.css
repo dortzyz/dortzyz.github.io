@@ -205,7 +205,7 @@ body {
 
 .grid-section-card {
     background-color: red;
-    justify-items: center;
+    /* justify-items: center; */
 
     /* padding: 0rem;
     margin: 0rem 0rem; */
@@ -251,7 +251,7 @@ div.card-image span{ /* div.box-img-label */
     left: 5px;
     bottom: 10px;
     padding: 0rem;
-    border-radius: 0 0 0 1.5rem; /* borde para esquina igual a .card-img img */
+    border-radius: 0 0.5rem 0 1.5rem; /* borde para esquina igual a .card-img img */
 }
 
 div.card-image p { /* maximo 21 caracteres */
@@ -261,8 +261,48 @@ div.card-image p { /* maximo 21 caracteres */
     margin: 0;
 }
 
-.card-content {
-    max-width: 100%;
+div.card-content {
+    width: auto;
+    margin: 0rem 0.5rem;
+    padding: 0rem;
+    justify-items: left;
+    background-color: rgba(53, 113, 82, 0.5);
+}
+
+div.card-content-subtitle p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+div.card-content h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+div.card-content-container{
+    /* margin: auto; */
+    /* height: 20px; */
+    /* width: auto; */
+    background-color: rgba(100, 110, 5,1);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* gap: 20%; */
+    justify-content: space-between;
+}
+
+div.price-tag{
+    padding: 0.6rem;
+}
+
+div.toggle-subcard {
+    padding: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+}
+
+div.toggle-subcard:hover {
+    background-color: rgba(0,0,0,1);
 }
 
 
