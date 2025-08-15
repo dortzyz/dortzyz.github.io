@@ -153,7 +153,7 @@ body {
 /* secciones -----------------------------------------------*/
 .section-container {
     margin: 1.5rem 1rem;
-    padding-top: 5rem; /* espaciado para la barra de navegacion */
+    padding: 5rem 0 0 0; /* espaciado para la barra de navegacion */
     background-color: rgb(10, 152, 107);
 }
 
@@ -180,7 +180,8 @@ body {
     width: auto;
 
     margin: 0rem 1rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
+    padding: 0 0 1rem 0;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -289,10 +290,11 @@ div.card-content-container{
     flex-direction: row;
     /* gap: 20%; */
     justify-content: space-between;
+    align-items: center;
 }
 
 div.price-tag{
-    padding: 0.6rem;
+    padding: 0rem 0rem;
 }
 
 div.toggle-subcard {
