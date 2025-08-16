@@ -48,7 +48,7 @@ body {
     /* background-color: #312e3b; */
     background-color: rgba(49, 46, 59, .5);
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     width: auto;
     height: fit-content;
     border-radius: 0px 0px 20px 20px;
@@ -100,6 +100,16 @@ body {
     /* display: inline-block; */
     /* width: 20px; */
     background-color: #dee75c;
+    margin: 0rem 0.5rem;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+}
+
+div.logo-box img {
+    width: 60px;
 }
 
 .nav-card, .navegacion div a {
@@ -131,7 +141,7 @@ body {
 }
 
 .nav-card-title {
-    padding: 0.8rem;
+    padding: 0.5rem 0.8rem;
     align-content: center;
 }
 
