@@ -31,6 +31,11 @@ body {
     background-color: rgba(193, 88, 88, 1);
 }
 
+.no-margin {
+    margin: 0;
+    padding: 0;
+}
+
 /* header y barra de navegacion ------------------------------------*/
 .title-prime { /* header h1 */
     background-color: #312e3b;
@@ -192,13 +197,17 @@ div.logo-box img {
 
     margin: 0rem 0rem;
     /* padding-bottom: 1rem; */
-    padding: 1rem 0;
+    padding: 1rem 0.3rem;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     justify-items: center;
     align-items: start;
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 @media only screen and (max-width:1000px) and (min-width:670px)  {
@@ -219,11 +228,13 @@ div.logo-box img {
     background-color: red;
     /* justify-items: center; */
 
-    /* padding: 0rem;
-    margin: 0rem 0rem; */
+    /* padding: 0rem; */
+    /* margin: 0rem 0rem; */
     /* max-width: fit-content; */
     /* width: auto; */
-    height: fit-content;
+    /* height: fit-content; */
+    min-width: 300px;
+    position: relative;
 }
 
 .grid-section-card:hover {
@@ -232,7 +243,8 @@ div.logo-box img {
 
 .card-image {
     background-color: rgba(240, 240, 240, 0.5);
-    padding: 5px;
+    /* padding: 5px; */
+    margin: 0.5rem 0.5rem 0;
 
     position: relative;
     /*  max-width: 100%; /* para tamaño de la imagen responsive*/
@@ -245,7 +257,8 @@ div.logo-box img {
 }
 
 div.card-image img {
-    max-width: 100%; /* para tamaño de la imagen responsive*/
+    /* max-width: 100%; */ /* para tamaño de la imagen responsive*/
+    width: -webkit-fill-available;
     background-color: #4647a4;
     border-radius: 1.5rem; /* borde redondeado de la imagen */
 
@@ -260,8 +273,8 @@ div.card-image span{ /* div.box-img-label */
 
     position: absolute ;
     z-index: 2;
-    left: 5px;
-    bottom: 10px;
+    /* left: 5px; */
+    bottom: 5px;
     padding: 0rem;
     border-radius: 0 0.5rem 0 1.5rem; /* borde para esquina igual a .card-img img */
 }
@@ -275,7 +288,7 @@ div.card-image p { /* maximo 21 caracteres */
 
 div.card-content {
     width: auto;
-    margin: 0rem 0.5rem;
+    margin: 0.5rem 0.5rem 0rem;
     padding: 0rem;
     justify-items: left;
     background-color: rgba(53, 113, 82, 0.5);
@@ -318,6 +331,16 @@ div.toggle-subcard:hover {
     background-color: rgba(0,0,0,1);
 }
 
+div.card-hide {
+    background-color: rgba(100, 110, 5,0.5);
+    transform: translateY(400px);
+    position: absolute;
+    top: 3rem;
+    z-index: 5;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    
+}
 
 
 
