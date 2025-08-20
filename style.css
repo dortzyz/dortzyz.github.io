@@ -241,10 +241,15 @@ div.logo-box img {
     background-color: #4647a4;
 }
 
+.box-card {
+    margin: 0.5rem 0.5rem 0rem;
+    position: relative;
+}
+
 .card-image {
     background-color: rgba(240, 240, 240, 0.5);
     /* padding: 5px; */
-    margin: 0.5rem 0.5rem 0;
+    /* margin: 0.5rem 0.5rem 0; */
 
     position: relative;
     /*  max-width: 100%; /* para tamaño de la imagen responsive*/
@@ -288,7 +293,7 @@ div.card-image p { /* maximo 21 caracteres */
 
 div.card-content {
     width: auto;
-    margin: 0.5rem 0.5rem 0rem;
+    margin: 0.5rem 0rem 0rem;
     padding: 0rem;
     justify-items: left;
     background-color: rgba(53, 113, 82, 0.5);
@@ -321,7 +326,7 @@ div.price-tag{
     padding: 0rem 0rem;
 }
 
-div.toggle-subcard {
+/* div.toggle-subcard {
     padding: 0.6rem;
     background-color: rgba(0, 0, 0, 0.3);
     color: rgb(255, 255, 255);
@@ -329,19 +334,54 @@ div.toggle-subcard {
 
 div.toggle-subcard:hover {
     background-color: rgba(0,0,0,1);
+} */
+
+.btn-show-more {
+    padding: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    border: 0;
 }
 
-div.card-hide {
-    background-color: rgba(100, 110, 5,0.5);
-    transform: translateY(400px);
+.btn-show-more:hover {
+    background-color: rgba(0,0,0,1);
+}
+
+.btn-show-more span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-show-more:focus + .card-hidden {
+    transform: translateY(0px);
+
+}
+
+.pos-absolute-BR {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+div.card-hidden {
+    background-color: rgba(228, 231, 203, 0.7);
+    transform: translateY(600px);
     position: absolute;
     top: 3rem;
+    left: 0;
     z-index: 5;
     width: -webkit-fill-available;
     height: -webkit-fill-available;
     
 }
 
+.visibility-hide {
+    visibility: hidden;
+}
+
+.force-font {
+    font-family: "Montserrat", sans-serif;
+}
 
 
 /* css de referencia ------------------------------------------------ */
