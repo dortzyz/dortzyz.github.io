@@ -373,7 +373,7 @@ div.toggle-subcard:hover {
 
 div.card-hidden {
     background-color: rgba(228, 231, 203, 0.7);
-    transform: translateY(0px); /* 400-600 */
+    transform: translateY(600px); /* 400-600 */
     position: absolute;
     top: 3rem;
     left: 0;
