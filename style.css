@@ -247,7 +247,8 @@ div.logo-box img {
     /* max-width: fit-content; */
     /* width: auto; */
     /* height: fit-content; */
-    min-width: 300px;
+    min-width: 300px; /* ancho de tarjetas para mantener flexbox */
+    max-width: 300px;
     position: relative;
 }
 
@@ -362,6 +363,7 @@ div.toggle-subcard:hover {
 
 .btn-show-more:hover {
     background-color: rgba(0,0,0,1);
+    cursor: pointer;
 }
 
 /* .btn-show-more span {
@@ -406,6 +408,11 @@ div.card-hidden-box {
     width: 70%;
     border-radius: 1rem;
     display: block;
+}
+
+.btn-close-show-more:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 div.card-hidden-box span {
