@@ -1,31 +1,39 @@
 /* test de ventana para catalogo */
 
-function holaMundo() {
-    console.log("hola mundo")
-    /* let x = document.getElementsByClassName("title-prime").style.color */
-    /* if (document.getElementsByClassName("nav-box").style.color === "white"){
-        document.getElementsByClassName("title-prime").style.color = "red"
-    } else {
-        document.getElementsByClassName("title-prime").style.color = "red"
-    } */
-    /* document.getElementsByClassName("nav-box").style.color = "red" */
-    /* const elem = document.querySelector(".grid-section-card");
-    const parent = elem.firstElementChild;
-    console.log(parent); */
-/*
-    // deteccion de click en la pagina
-    document.addEventListener('click', function(event) {
-        // This function will execute whenever a click occurs anywhere on the document.
-        // The 'event' object contains details about the click, including the target element.
-        console.log('Clicked on:', event.target);
-        const elementClick = event.target;
+// deteccion de click en la pagina
+document.addEventListener('click', function(event) {
+    // This function will execute whenever a click occurs anywhere on the document.
+    // The 'event' object contains details about the click, including the target element.
+    const target = event.target;
+    const classes = event.target.classList;
+    //console.log('Clicked on:', target);
+    //console.log(classes);
+    
+    
+    if ( classes.contains("btn-show-more")){ // check if show more button was click
+        console.log("open show more");
+        //const sibling = target.nextElementSibling; // select card-hidden
+        //console.log(sibling);
+        //sibling.classList.toggle('card-hidden-reveal')
+        //console.log(sibling.classList.length);
+        toggleTest(target.nextElementSibling);
+        
+    }
 
-        // Example: Check if the click was outside a specific element
-        const myElement = document.getElementById('mySpecificElement');
-        if (myElement && !myElement.contains(event.target)) {
-            console.log('Clicked outside mySpecificElement');
-            // Perform actions when clicked outside
-        }
-    });
-*/
+    if ( classes.contains("btn-close-show-more") ){
+        console.log("close show more");
+        toggleTest(target.parentElement.parentElement);
+    }
+
+
+    // Example: Check if the click was outside a specific element
+    const myElement = document.getElementById('mySpecificElement');
+    if (myElement && !myElement.contains(event.target)) {
+        console.log('Clicked outside mySpecificElement');
+        // Perform actions when clicked outside
+    }
+});
+
+function toggleTest(targetElement){
+    targetElement.classList.toggle("hide-card");
 }

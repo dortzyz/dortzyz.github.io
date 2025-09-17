@@ -44,6 +44,12 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+.btn-font-style {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 /* header y barra de navegacion ------------------------------------*/
 .title-prime { /* header h1 */
     background-color: #312e3b;
@@ -271,7 +277,7 @@ div.logo-box img {
 
 div.card-image img {
     /* max-width: 100%; */ /* para tamaño de la imagen responsive*/
-    width: -webkit-fill-available;
+    width: 100%; /* -webkit-fill-available no compatible con mozilla*/
     background-color: #4647a4;
     border-radius: 1.5rem; /* borde redondeado de la imagen */
 
@@ -349,21 +355,23 @@ div.toggle-subcard:hover {
     background-color: rgba(0, 0, 0, 0.3);
     color: rgb(255, 255, 255);
     border: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .btn-show-more:hover {
     background-color: rgba(0,0,0,1);
 }
 
-.btn-show-more span {
+/* .btn-show-more span {
     font-size: 16px;
     font-weight: 400;
-}
+} */
 
-.btn-show-more:focus + .card-hidden {
+/* .btn-show-more:focus + .card-hidden {
     transform: translateY(0px);
-
-}
+} */
 
 .pos-absolute-BR {
     position: absolute;
@@ -373,26 +381,44 @@ div.toggle-subcard:hover {
 
 div.card-hidden {
     background-color: rgba(228, 231, 203, 0.7);
-    transform: translateY(600px); /* 400-600 */
+    /* transform: translateY(600px); */ /* 400-600  */
     position: absolute;
-    top: 3rem;
+    top: 10%;
     left: 0;
     z-index: 5;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    overflow-y: scroll;
-    
+    width: 100%;
+    height: 90%;
+    /* overflow-y: scroll; */
 }
 
 div.card-hidden-box {
-    background-color: rgb(34, 184, 96);
+    background-color: rgb(61, 79, 68);
     text-align: center;
-    padding: 0.5rem 0rem;
+    padding: 0.3rem 0rem;
+}
+
+.btn-close-show-more {
+    background-color: rgb(152, 152, 152);
+    height: 1rem;
+    text-align: center;
+    margin: 0.3rem auto 0.5rem;
+    padding: 0rem;
+    width: 70%;
+    border-radius: 1rem;
+    display: block;
+}
+
+div.card-hidden-box span {
+    color: rgba(246, 246, 246, 0.809);
+    display: block;
+    /* margin: 0.5rem auto 0; */
 }
 
 .description-box {
     background-color: rgba(221, 50, 50, 0.3);
     font-size: 18px;
+    height: 82%;
+    overflow-y: scroll;
 }
 
 .description-box ul {
@@ -400,6 +426,9 @@ div.card-hidden-box {
     padding: 1rem 0.6rem 2rem 2rem;
 }
 
+.hide-card {
+    transform: translateY(600px);
+}
 
 /* css de referencia ------------------------------------------------ */
 .container {
