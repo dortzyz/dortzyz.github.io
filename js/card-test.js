@@ -9,15 +9,10 @@ document.addEventListener('click', function(event) {
     //console.log('Clicked on:', target);
     //console.log(classes);
     
-    
-    if ( classes.contains("btn-show-more")){ // check if show more button was click
+    if ( classes.contains("btn-show-more") ){ // check if show more button was click
         console.log("open show more");
-        //const sibling = target.nextElementSibling; // select card-hidden
         //console.log(sibling);
-        //sibling.classList.toggle('card-hidden-reveal')
-        //console.log(sibling.classList.length);
-        toggleTest(target.nextElementSibling);
-        
+        toggleTest(target.nextElementSibling); // select card-hidden
     }
 
     if ( classes.contains("btn-close-show-more") ){
@@ -25,13 +20,6 @@ document.addEventListener('click', function(event) {
         toggleTest(target.parentElement.parentElement);
     }
 
-
-    // Example: Check if the click was outside a specific element
-    const myElement = document.getElementById('mySpecificElement');
-    if (myElement && !myElement.contains(event.target)) {
-        console.log('Clicked outside mySpecificElement');
-        // Perform actions when clicked outside
-    }
 });
 
 function toggleTest(targetElement){

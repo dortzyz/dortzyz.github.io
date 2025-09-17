@@ -418,7 +418,7 @@ div.card-hidden-box span {
     background-color: rgba(221, 50, 50, 0.3);
     font-size: 18px;
     height: 82%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .description-box ul {
