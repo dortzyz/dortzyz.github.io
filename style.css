@@ -439,6 +439,68 @@ div.card-hidden-box span {
     transform: translateY(600px);
 }
 
+div.contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+    margin: 3rem 0.5rem 0;
+
+}
+
+@media only screen and (max-width:800px) {
+    div.contact-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+.flex-row-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    gap: 1.5rem;
+}
+
+div.contact-box {
+    /* margin: 1rem; */
+    /* width: auto; */
+    padding: 1rem;
+    background-color: rgba(246, 246, 246, 0.809);
+}
+
+div.contact-box p {
+    /* margin: 0 1rem; */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ico-box {
+    background-color: rgba(193, 88, 88, 1);
+    /* margin: 0.5rem 0; */
+    /* padding: 0rem; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a.ico-box:hover {
+    background-color: rgba(153, 153, 153, 0.7);
+}
+
 /* css de referencia ------------------------------------------------ */
 .container {
     width: 400px;
