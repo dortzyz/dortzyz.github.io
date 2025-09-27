@@ -25,6 +25,10 @@ function toggleTest(targetElement){
     targetElement.classList.toggle("hide-card");
 }
 
+function holaMundo(){
+    console.log("hola mundo");
+}
+
 // active link on scroll
 // https://www.youtube.com/watch?v=UoE1hqfpXX0
 
@@ -75,7 +79,7 @@ function activeNavLink(){
 
     let firstNavLink = navlinks[0];
     let firsSection = sections[0];
-    console.log(firstNavLink)
+    //console.log(firstNavLink); 
 
     sections.forEach(sec => {
         
@@ -84,8 +88,12 @@ function activeNavLink(){
         let id = sec.getAttribute('id');
         //console.log(sec);
 
-        let selectorTop = sec.offsetTop - (sec.offsetHeight * 0.4);
-        let selectorBottom = sec.offsetTop + sec.offsetHeight - (sec.offsetHeight * 0.6);
+        let selectorTop = sec.offsetTop - (sec.offsetHeight * 0);
+        let selectorBottom = sec.offsetTop + sec.offsetHeight - (sec.offsetHeight * 0);
+
+        if (sec == firsSection){
+            selectorTop = 0;
+        }
 
         //console.log( sec, `offset: ${offset}`, `height: ${height}` );
         console.log("ventana",selectorTop,selectorBottom);
@@ -94,9 +102,8 @@ function activeNavLink(){
             navlinks.forEach(links => {
                 links.classList.remove('active');
             });
-            console.log(sec,firstNavLink)
+            //console.log(sec,firstNavLink);
             if (sec == firsSection){
-                //console.log(sec[0])
                 firstNavLink.classList.add('active');
             }
             else{
