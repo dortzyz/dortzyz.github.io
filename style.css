@@ -104,6 +104,12 @@ body {
     overflow-x: auto;
 }
 
+@media only screen and (max-width:700px) {
+    .nav-container {
+        grid-template-columns: auto 75%;
+    }
+}
+
 .scroll-nav {
    /*  overflow-x: scroll; */
     scrollbar-color: rgb(198, 196, 196) #312e3b;
@@ -119,7 +125,7 @@ body {
     /* display: inline-block; */
     /* width: 20px; */
     background-color: #dee75c;
-    margin: 0rem 0.5rem;
+    /* margin: 0rem 0.5rem; */
 }
 
 .logo-box {
@@ -149,7 +155,9 @@ div.logo-box img {
     color: #ffffff;
 }
 
-.nav-card:hover, .navegacion div a:hover{
+.nav-card:hover, 
+.navegacion div a:hover,
+.active{
     background-color: #4647a4;
     color: #ffffff;
 }
@@ -162,6 +170,7 @@ div.logo-box img {
 .nav-card-title {
     padding: 0.5rem 0.8rem;
     align-content: center;
+    font-size: 16px; /* tamaño de pestañas en navbar */
 }
 
 /* header .nav-sticky {
@@ -182,8 +191,8 @@ div.logo-box img {
 
 /* secciones -----------------------------------------------*/
 .section-container {
-    margin: 1rem 1rem;
-    padding: 5rem 1rem 1rem; /* espaciado para la barra de navegacion */
+    margin: 0rem 0.2rem;
+    padding: 7rem 1.2rem; /* espaciado para la barra de navegacion */
     background-color: rgb(10, 152, 107);
 }
 
@@ -251,6 +260,15 @@ div.logo-box img {
     max-width: 300px;
     position: relative;
 }
+
+@media only screen and (max-width:900px) {
+    .grid-section-card {
+        min-width: 240px; /* ancho de tarjetas para mantener flexbox en moviles*/
+        max-width: 240px;
+        
+    }
+}
+
 
 .grid-section-card:hover {
     background-color: #4647a4;
@@ -499,6 +517,7 @@ div.contact-box p {
 
 a.ico-box:hover {
     background-color: rgba(153, 153, 153, 0.7);
+    cursor: pointer;
 }
 
 /* css de referencia ------------------------------------------------ */
