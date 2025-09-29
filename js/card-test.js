@@ -72,7 +72,7 @@ function activeNavLink(){
     let navlinks = document.querySelectorAll('div.nav-bar a');
     let navBar = document.querySelector('div.nav-box');
 
-    let currPos = window.pageYOffset;// + navBar.offsetHeight;
+    let currPos = window.pageYOffset + 120;// + navBar.offsetHeight; // offset del navbar
     let viewPosX = window.pageXOffset;
     let viewPosY = window.pageYOffset;
     console.log(currPos);
