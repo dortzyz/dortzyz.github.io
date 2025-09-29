@@ -56,18 +56,30 @@ body {
     color: white;
     font-size: 24px;
     text-align: center;
-    padding: 0.5rem 0.8rem;
+    padding: 0rem 0.5rem;
     /* margin: auto; */ /* definido en media query */
 
     z-index: 100;
     position: relative;
 }
 
+@media only screen and (max-width:700px) {
+    .title-prime {
+        font-size: 18px;
+    }
+}
+
 .header-box {
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0.5rem;
     top: 0px;
     z-index: 100;
     background-color: #4647a4;
+}
+
+@media only screen and (max-width:700px) {
+    .header-box {
+        padding: 0.1rem 0.5rem;
+    }
 }
 
 .header-container {
@@ -98,7 +110,7 @@ body {
         position: sticky;
     }
     .auto-offset {
-        top: 60px;
+        top: 38px;
     }
 
 }
@@ -122,16 +134,16 @@ body {
 }
 
 div.logo-box img {
-    width: 60px;
+    width: 50px;
 }
 
 div.logo-box2 img {
-    width: 40px;
+    width: 35px;
 }
 
 .nav-box {
     /* background-color: #312e3b; */
-    background-color: rgba(49, 46, 59, .5);
+    background-color: rgba(49, 46, 59, .8);
     color: white;
     padding: 0.5rem 0.5rem;
     width: auto;
@@ -164,7 +176,7 @@ div.logo-box2 img {
     align-items: flex-start;
     gap: 0.4rem;
 
-    padding: 0.5rem 0.9rem 0.9rem;
+    padding: 0.5rem 0.5rem;
 
     background-color: #000000;
     overflow-x: auto;
@@ -264,7 +276,7 @@ div.logo-box2 img {
     font-weight: 600;
     color: #ffffff;
 
-    margin: 0rem 0rem 0.8rem;
+    /* margin: 0rem 0rem 0.8rem; */
     background-color: #525252;
 
     padding: 1rem 1rem;
@@ -283,11 +295,11 @@ div.logo-box2 img {
 
     margin: 0rem 0rem;
     /* padding-bottom: 1rem; */
-    padding: 1rem 0.3rem;
+    padding: 1rem 1rem;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 4rem;
     justify-items: center;
     align-items: start;
 
@@ -311,7 +323,7 @@ div.logo-box2 img {
 }
 
 .grid-section-card {
-    background-color: red;
+    background-color: rgba(153, 153, 153, 0.7);
     /* justify-items: center; */
 
     /* padding: 0rem; */
@@ -322,6 +334,7 @@ div.logo-box2 img {
     min-width: 300px; /* ancho de tarjetas para mantener flexbox */
     max-width: 300px;
     position: relative;
+    padding: 0.4rem 0.4rem 0rem 0.4rem;
 }
 
 @media only screen and (max-width:900px) {
@@ -334,11 +347,11 @@ div.logo-box2 img {
 
 
 .grid-section-card:hover {
-    background-color: #4647a4;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .box-card {
-    margin: 0.5rem 0.5rem 0rem;
+    /* margin: 0.5rem 0.5rem 0rem; */
     position: relative;
 }
 
@@ -392,7 +405,7 @@ div.card-content {
     margin: 0.5rem 0rem 0rem;
     padding: 0rem;
     justify-items: left;
-    background-color: rgba(53, 113, 82, 0.5);
+    background-color: rgba(53, 113, 82, 0.9);
 }
 
 div.card-content-subtitle p {
@@ -463,7 +476,7 @@ div.toggle-subcard:hover {
 }
 
 div.card-hidden {
-    background-color: rgba(228, 231, 203, 0.7);
+    background-color: rgba(228, 231, 203, 0);
     /* transform: translateY(600px); */ /* 400-600  */
     position: absolute;
     top: 10%;
@@ -471,26 +484,30 @@ div.card-hidden {
     z-index: 5;
     width: 100%;
     height: 90%;
-    border-radius: 1rem 1rem 0 0;
+    /* border-radius: 1rem 1rem 0 0; */
     /* overflow-y: scroll; */
 }
 
 div.card-hidden-box {
     background-color: rgb(61, 79, 68);
-    text-align: center;
-    padding: 0.3rem 0rem;
+    /* text-align: center; */
+    padding: 0.3rem 0rem 0rem;
     border-radius: 0.8rem 0.8rem 0 0;
 }
 
 .btn-close-show-more {
     background-color: rgb(152, 152, 152);
-    height: 1rem;
-    text-align: center;
-    margin: 0.3rem auto 0.5rem;
-    padding: 0rem;
+    /* height: 1rem; */
+    /* text-align: center; */
+    margin: 0rem auto;
+    /* padding: 0rem; */
     width: 70%;
     border-radius: 1rem;
-    display: block;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0,0,0,1);
 }
 
 .btn-close-show-more:hover {
@@ -498,16 +515,23 @@ div.card-hidden-box {
     cursor: pointer;
 }
 
+.btn-close-show-more::before {
+    content: '\2716';
+}
+
 div.card-hidden-box span {
-    color: rgba(246, 246, 246, 0.809);
+    color: rgb(246, 246, 246);
     display: block;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    font-size: 1rem;
     /* margin: 0.5rem auto 0; */
 }
 
 .description-box {
-    background-color: rgba(221, 50, 50, 0.3);
-    font-size: 18px;
-    height: 82%;
+    background-color: rgba(212, 212, 212, 0.8);
+    font-size: 1rem;
+    height: 85%;
     overflow-y: auto;
 }
 
