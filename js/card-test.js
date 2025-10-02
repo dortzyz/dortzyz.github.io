@@ -32,49 +32,41 @@ function holaMundo(){
 // active link on scroll
 // https://www.youtube.com/watch?v=UoE1hqfpXX0
 
-//let sections = document.querySelectorAll('section');
-//let navlinks = document.querySelectorAll('div.nav-bar a');
-
-//navlinks.forEach( (links) => console.log(links.classList));
 window.onload = () => {
-    let screenX = window.innerWidth;
-    let screenY = window.innerHeight;
-    if ( screenX > 900){
-        activeNavLink();
-    }
+    activeLinkOnScreen();
 };
 
 window.onscroll = () => {
-    let screenX = window.innerWidth;
-    let screenY = window.innerHeight;
-    //console.log(screenX,screenY)
-    if ( screenX > 900){
-        activeNavLink();
-    }
+    activeLinkOnScreen();
 };
 
-window.addEventListener( "scrollend",() => {
-    //activeNavLink();
-});
-
-window.addEventListener( "touchmove", () => {
-    //activeNavLink();
-});
+window.onresize = () => { 
+    activeLinkOnScreen(); 
+}
 
 //document.addEventListener( "touchmove", activeNavLink, true);
 //document.addEventListener( "scroll", activeNavLink, false);
 
+function activeLinkOnScreen(){
+    let screenX = window.innerWidth;
+    //let screenY = window.innerHeight;
+    //console.log(screenX,screenY)
+    if ( screenX > 700){
+        activeNavLink();
+    }
+    else {
+        removeActiveLink();
+    }
+}
 
 function activeNavLink(){
-    //document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, user-scalable=no, initial-scale='+(1/window.devicePixelRatio)+'');
-    
     let sections = document.querySelectorAll('section');
     let navlinks = document.querySelectorAll('div.nav-bar a');
     let navBar = document.querySelector('div.nav-box');
 
     let currPos = window.pageYOffset + 120;// + navBar.offsetHeight; // offset del navbar
-    let viewPosX = window.pageXOffset;
-    let viewPosY = window.pageYOffset;
+    //let viewPosX = window.pageXOffset;
+    //let viewPosY = window.pageYOffset;
     console.log(currPos);
 
     let firstNavLink = navlinks[0];
@@ -112,56 +104,14 @@ function activeNavLink(){
             
         }
 
-        /* if ( top >= 0 && top <100){
-            navlinks.forEach(links => {
-                links.classList.remove('active');
-            });
-            document.querySelector(`div.nav-bar a[href*=inicio]`)?.classList.add('active');
-        } */
-
-        /* if ( top >= offset && top < offset + height){
-            console.log('select ' + id);
-            navlinks.forEach(links => {
-                links.classList.remove('active');
-            });
-            document.querySelector(`div.nav-bar a[href*="${id}"]`)?.classList.add('active');
-        } */
     });
 }
 
+function removeActiveLink(){
+    let navlinks = document.querySelectorAll('div.nav-bar a');
+    navlinks.forEach( links => {links.classList.remove('active');} );
+}
 
-/*
-window.addEventListener( "scroll",() => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('div.nav-bar a');
-
-    console.log(navLinks);
-
-    sections.forEach( (sec) => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 50;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        console.log(top,offset,height);
-
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === id) {
-                link.classList.add('active');
-                link.setAttribute('aria-current', 'page');
-            }
-        });
-
-        if ( top >= offset && top < offset + height){
-            navlinks.forEach(links => {
-                links.classList.remove('active');
-            });
-            document.querySelector(`div.nav-bar a[href*="${id}"]`)?.classList.add('active');
-        }
-
-    })
-});
-*/
 
 /*
 document.addEventListener('DOMContentLoaded', () => {
