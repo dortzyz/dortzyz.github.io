@@ -9,11 +9,21 @@ document.addEventListener('click', function(event) {
     //console.log('Clicked on:', target);
     //console.log(classes);
     
-    if ( classes.contains("btn-show-more") ){ // check if show more button was click
+    if ( classes.contains("btn-show-more") ){
+        if (classes.contains("pos-absolute-BR")){
+            toggleTest(target.nextElementSibling); // select card-hidden
+        }
+        else {
+            toggleTest(target.parentElement.parentElement.nextElementSibling); // select card-hidden
+        }
+        
+    }
+
+/*     if ( classes.contains("btn-show-more") ){ // check if show more button was click
         console.log("open show more");
         //console.log(sibling);
         toggleTest(target.nextElementSibling); // select card-hidden
-    }
+    } */
 
     if ( classes.contains("btn-close-show-more") ){
         console.log("close show more");
@@ -88,7 +98,7 @@ function activeNavLink(){
         }
 
         //console.log( sec, `offset: ${offset}`, `height: ${height}` );
-        console.log("ventana",selectorTop,selectorBottom);
+        //console.log("ventana",selectorTop,selectorBottom);
 
         if ( currPos >= selectorTop && currPos <= selectorBottom ){
             navlinks.forEach(links => {
@@ -100,6 +110,7 @@ function activeNavLink(){
             }
             else{
                 document.querySelector(`div.nav-bar a[href*="${id}"]`)?.classList.add('active');
+                console.log("section",id);
             }
             
         }
