@@ -21,10 +21,10 @@ body {
     --color-hover-default: rgba(255, 255, 255, 0.3);
     --color-button-default: rgba(63,63,63,1);
 }
-
+/*
 .lorem-text-88::after {
     content: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus lorem pharetra.';
-}
+}*/
 
 /*  Estilos en solitario ----------------------------------------------------------------*/
 .fixed-box {
@@ -49,7 +49,7 @@ body {
     padding: 0;
 }
 
-.visibility-hide {
+.gb-hide {
     visibility: hidden;
 }
 
@@ -529,7 +529,7 @@ div.main-page section:last-child {
     padding: 0px 2px;
     border-radius: 5px;
 }
-
+/*
 .item--price::before,
 .item--wholeprice::before {
     content: '\0024';
@@ -540,7 +540,7 @@ div.main-page section:last-child {
 }
 .item--discount::after {
     content: '\0025';
-}
+}*/
 
 .item-button {
     color: #efefef;
@@ -612,6 +612,7 @@ div.main-page section:last-child {
     font-weight: 500;
     color: white;
     text-align: center;
+    width: 100%;
 }
 
 .item-description--feat {
