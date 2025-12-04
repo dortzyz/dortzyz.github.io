@@ -1,0 +1,12 @@
+[
+    {
+        "subsectionTitle": "subsection 1 de home",
+
+        "cards":
+        [
+            {"itemSku":"test6", "itemShow":true, "itemTitle": "titulo de item 1 matriz de prueba", "itemSubtitle": "subtitulo de item 1", "price": 50.2, "salePrice": 40, "itemFeat": ["feat 1", "feat 2"]},
+            {"itemSku":"test7", "itemShow":true, "itemAvailable": true, "itemTitle": "titulo de item 2", "itemSubtitle": "", "price": 35, "salePrice": 33, "itemFeat": ["feat 1", "feat 2"]},
+            {"itemSku":"test8", "itemShow":true, "itemAvailable": true, "itemTitle": "titulo de item 3", "itemSubtitle": "", "price": 20, "salePrice": 15, "itemFeat": ["feat 1", "feat 2"]}
+        ]
+    }
+]

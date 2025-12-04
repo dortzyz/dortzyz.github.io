@@ -1,0 +1,32 @@
+[
+    {
+        "subsectionTitle": "subsection 1 de home",
+
+        "cards":
+        [
+            {"itemSku":"test1", "itemShow":true, "itemTitle": "titulo de item 1 matriz de prueba", "itemSubtitle": "subtitulo de item 1", "price": 50.2, "salePrice": 40, "itemFeat": ["feat 1", "feat 2"]},
+            {"itemSku":"test2", "itemShow":true, "itemAvailable": true, "itemTitle": "titulo de item 2", "itemSubtitle": "", "price": 35, "salePrice": 33, "itemFeat": ["feat 1", "feat 2"]},
+            {"itemSku":"test3", "itemShow":true, "itemAvailable": true, "itemTitle": "titulo de item 3", "itemSubtitle": "", "price": 20, "salePrice": 15, "itemFeat": ["feat 1", "feat 2"]}
+        ]
+    },
+
+    {
+        "subsectionTitle": "subsection 1.5 de home",
+
+        "cards":
+        [
+            {"itemSku":"test1", "itemShow":false, "itemAvailable": true, "itemTitle": "titulo de item 1 matriz de prueba", "itemSubtitle": "subtitulo de item 1", "price": 50.2, "salePrice": 40, "itemImg": "store_sku_test1", "itemFeat": ["feat 1", "feat 2"]},
+            {"itemSku":"test2", "itemShow":true, "itemAvailable": false, "itemTitle": "titulo de item 2", "itemSubtitle": "", "price": 35, "salePrice": 30, "itemImg": "store_sku_test1", "itemFeat": ["feat 1", "feat 2"]},
+            {"itemSku":"test3", "itemShow":false, "itemAvailable": true, "itemTitle": "titulo de item 3", "itemSubtitle": "", "price": 20, "salePrice": 15, "itemImg": "store_sku_test1", "itemFeat": ["feat 1", "feat 2"]}
+        ]
+    },
+
+    {
+        "subsectionTitle": "subsection 2 de home",
+        "cards": [
+            {"itemSku":"test4", "itemShow":true, "itemAvailable": true, "itemTitle": "titulo de item 4", "itemSubtitle": "", "price": 11, "salePrice": 40, "itemImg": "store_sku_test1", "itemFeat": ["feat 1", "feat 2"]}
+        ]
+    }
+
+
+]
