@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store electroimp3d</title>
+    <title>Store 0.0.1</title>
+    <link rel="icon" type="image/x-icon" href="./img/T_logoV2S.png">
 
     <link rel="stylesheet" href="style.css" >
 
@@ -11,38 +12,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
-
+<!-- cambios estables 2 -->
 <body>
-    <div id="main-page" class="main-page">
-        <div class="header-box">
-            <div class="header-container">
-                <div class="logo-box">
-                    <a href="#" class="logo-container2"><img src="img/T_logoV2.png" alt="logo pagina"></a>
-                </div>
-                <h1 id="titulo" class="title-prime" onclick="holaMundo()">catálogo virtual</h1>
+    <div class="header-box">
+        <div class="header-container">
+            <div class="logo-box">
+                <a href="#" class="logo-container2 gb-style4button"><img src="img/T_logoV2.png" alt="logo pagina"></a>
             </div>
+            <h1 id="titulo" class="title-prime" onclick="holaMundo()">catálogo virtual</h1>
         </div>
-        <div class="nav-box fixed-box shadow-box">
-            <div class="nav-container">
-                <div class="logo-box">
-                    <a href="#" class="logo-container"><img src="img/T_logoV2.png" alt="logo pagina"></a>
-                </div>
-                <div class="nav-bar scroll-nav">
-                    <a href="#" class="nav-card" ><div class="nav-card-title">inicio</div></a>
-                    <a href="#electronica" class="nav-card" ><div class="nav-card-title">electrónica</div></a>
-                    <a href="#impresora" class="nav-card" ><div class="nav-card-title">impresora 3D</div></a>
-                    <a href="#diseño" class="nav-card" ><div class="nav-card-title">diseño 3D</div></a>
-                    <a href="#contacto" class="nav-card" ><div class="nav-card-title">contacto</div></a>
-                </div>
-                <div class="logo-box"></div>
+    </div>
+    <div class="nav-box fixed-box gb-blur-effect">
+        <div class="nav-container">
+            <div class="logo-box">
+                <a href="#" class="logo-container gb-style4button"><img src="img/T_logoV2.png" alt="logo pagina"></a>
             </div>
+            <div class="nav-bar scroll-nav">
+                <a href="#" class="nav-card" ><div class="nav-card-title">inicio</div></a>
+                <a href="#electronica" class="nav-card" ><div class="nav-card-title">electrónica</div></a>
+                <a href="#impresora" class="nav-card" ><div class="nav-card-title">impresora 3D</div></a>
+                <a href="#diseño" class="nav-card" ><div class="nav-card-title">diseño 3D</div></a>
+                <a href="#contacto" class="nav-card" ><div class="nav-card-title">contacto</div></a>
+            </div>
+            <div class="logo-box"></div>
         </div>
-
-        <div class="section-box">
+    </div>
+    
+    <div id="main-page" class="main-box">
+        <div class="main-container">
 
             <section id="home" class="section-container">
-                <div class="titulo-index style-border">Test de card img</div>
-                <div class="card-section-box">
+                <div class="titulo-index gb-no-display">Test de card img</div>
+                <div class="card-section-box gb-no-display">
                     <div class="subsection-title">subtitulo de seccion</div>
                     <div class="card-section-container">
                         <!-- tarjeta matriz -->
@@ -159,198 +160,48 @@
     
                     </div>
                 </div>
+                <div class="card-section-box">
+                    <div class="subsection-title"></div>
+                    <div class="card-section-container"></div>
+                    <!-- <div class="subsection-title">${subsection_title}</div>
+                    <div class="card-section-container"></div> -->
+                </div>
+                <div class="card-section-box">
+                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="card-section-container"></div>
+                </div>
+                <div class="card-section-box">
+                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="card-section-container"></div>
+                </div>
+                <div class="card-section-box">
+                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="card-section-container"></div>
+                </div>
                 <!-- <div class="espacio-intermedio">espacio intermedio</div> -->
             </section>
 
             <section id="electronica" class="section-container">
                 <div class="titulo-index style-border">Electrónica</div>
                 <div class="card-section-box">
-                    <div class="card-section-container">
-
-                        <div class="item-box"> <!-- candidato principal -->
-                            <div class="item--container">
-                                <div class="item--info">
-                                    <div class="item--img">
-                                        <div class="lc-item-img-size-x"></div>
-                                    </div>
-                                    <div class="item--title">
-                                        <!-- <div class="gb-flex-container-left"> --> <!-- h3 hasta 88 +- 6 caracteres -->
-                                            <p>subtitulo item 1</p>
-                                            <h3 class="gb-truncate-text-lines-3 lorem-text-88">Titulo del item</h3>                      
-                                    <!--  </div> -->
-                                    </div>
-                                </div>                            
-                                <div class="item--footer">
-                                    <div>
-                                        <div class="item--price">9</div>
-                                        <div class="gb-flex-container lc-item-sale-tag">
-                                            <div class="item--wholeprice">12</div>
-                                            <div class="item--discount">25</div>
-                                        </div> 
-                                    </div>
-                                    
-                                    <button type="button" class="btn-show-more">Ver mas</button>
-                                </div>
-                            </div>
-                            <div class="hide-card item-description-box">
-                                <!-- <div class="item-description-container"> -->
-                                    <div class="item-description--header">
-                                        <div class="btn-close-show-more">cerrar</div>
-                                        <div class="gb-flex-container">
-                                            <h3 class="gb-truncate-text-lines-2">Titulo del item 0123456789 0123456789 0123456789 0123456789</h3>
-                                        </div>
-                                        
-                                    </div>
-                                
-                                    
-                                <!-- </div> -->
-                                <div class="item-description--feat">
-                                    <p>Caracteristicas</p>
-                                    <ul>
-                                        <li>caracteristica 1</li>
-                                        <li>caracteristica 2</li>
-                                        <!-- <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li> -->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="card-section-container"></div>
                 </div>
             </section>
 
             <section id="impresora" class="section-container">
-                <div class="titulo-index style-border">Impresora 3D</div>
+                <div class="titulo-index style-border">Impresora 3D</div>     
                 <div class="card-section-box">
-                    <div class="card-section-container">
-
-                        <div class="item-box"> <!-- candidato principal -->
-                            <div class="item--container">
-                                <div class="item--info">
-                                    <div class="item--img">
-                                        <div class="lc-item-img-size-x"></div>
-                                    </div>
-                                    <div class="item--title">
-                                        <!-- <div class="gb-flex-container-left"> --> <!-- h3 hasta 88 +- 6 caracteres -->
-                                            <p>subtitulo item 1</p>
-                                            <h3 class="gb-truncate-text-lines-3 lorem-text-88">Titulo del item</h3>                      
-                                    <!--  </div> -->
-                                    </div>
-                                </div>                            
-                                <div class="item--footer">
-                                    <div>
-                                        <div class="item--price">9</div>
-                                        <div class="gb-flex-container lc-item-sale-tag">
-                                            <div class="item--wholeprice">12</div>
-                                            <div class="item--discount">25</div>
-                                        </div> 
-                                    </div>
-                                    
-                                    <button type="button" class="btn-show-more">Ver mas</button>
-                                </div>
-                            </div>
-                            <div class="hide-card item-description-box">
-                                <!-- <div class="item-description-container"> -->
-                                    <div class="item-description--header">
-                                        <div class="btn-close-show-more">cerrar</div>
-                                        <div class="gb-flex-container">
-                                            <h3 class="gb-truncate-text-lines-2">Titulo del item 0123456789 0123456789 0123456789 0123456789</h3>
-                                        </div>
-                                        
-                                    </div>
-                                
-                                    
-                                <!-- </div> -->
-                                <div class="item-description--feat">
-                                    <p>Caracteristicas</p>
-                                    <ul>
-                                        <li>caracteristica 1</li>
-                                        <li>caracteristica 2</li>
-                                        <!-- <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li> -->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="card-section-container"></div>
                 </div>
             </section>
 
             <section id="diseño" class="section-container">
                 <div class="titulo-index style-border">Diseño 3D</div>
                 <div class="card-section-box">
-                    <div class="card-section-container">
-
-                        <div class="item-box"> <!-- candidato principal -->
-                            <div class="item--container">
-                                <div class="item--info">
-                                    <div class="item--img">
-                                        <div class="lc-item-img-size-x"></div>
-                                    </div>
-                                    <div class="item--title">
-                                        <!-- <div class="gb-flex-container-left"> --> <!-- h3 hasta 88 +- 6 caracteres -->
-                                            <p>subtitulo item 1</p>
-                                            <h3 class="gb-truncate-text-lines-3 lorem-text-88">Titulo del item</h3>                      
-                                    <!--  </div> -->
-                                    </div>
-                                </div>                            
-                                <div class="item--footer">
-                                    <div>
-                                        <div class="item--price">9</div>
-                                        <div class="gb-flex-container lc-item-sale-tag">
-                                            <div class="item--wholeprice">12</div>
-                                            <div class="item--discount">25</div>
-                                        </div> 
-                                    </div>
-                                    
-                                    <button type="button" class="btn-show-more">Ver mas</button>
-                                </div>
-                            </div>
-                            <div class="hide-card item-description-box">
-                                <!-- <div class="item-description-container"> -->
-                                    <div class="item-description--header">
-                                        <div class="btn-close-show-more">cerrar</div>
-                                        <div class="gb-flex-container">
-                                            <h3 class="gb-truncate-text-lines-2">Titulo del item 0123456789 0123456789 0123456789 0123456789</h3>
-                                        </div>
-                                        
-                                    </div>
-                                
-                                    
-                                <!-- </div> -->
-                                <div class="item-description--feat">
-                                    <p>Caracteristicas</p>
-                                    <ul>
-                                        <li>caracteristica 1</li>
-                                        <li>caracteristica 2</li>
-                                        <!-- <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li>
-                                        <li>caracteristica 3 123456 123456 123456 123456 123456 123456 123456 123456</li> -->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="card-section-container"></div>
                 </div>
             </section>
 
@@ -385,16 +236,27 @@
                                 
                             </div>
                         </div>
+                        
                         <div class="contact--card-box gb-round-corners">
                             <div class="contact--text">
                                 <h5>
-                                    Facebook e Instagram
+                                    Facebook
                                 </h5>
                                 <div>
                                     <span>
                                         Electrónica e impresión 3d Cuenca
                                     </span>
-                                    <span class="gb-white-space">   </span>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="contact--card-box gb-round-corners">
+                            <div class="contact--text">
+                                <h5>
+                                    instagram
+                                </h5>
+                                <div>
                                     <span>
                                         @electro_imp3d_cuenca 
                                     </span>
@@ -409,7 +271,7 @@
                                 </h5>
                                 <div>
                                     <span>
-                                        github.com/abc...
+                                        https://dortzyz.github.io/
                                     </span>
                                 </div>
                                 
@@ -428,13 +290,14 @@
         </div>
         <div class="footer-box">
             <div class="footer-container">
-                <p class="footer--copyright"><a href="https://www.google.com">Desarrollado por <span>Doing</span></a></p>
-                <p class="footer--copyright">© Todos los derechos reservados 2025.</p>
+                <p class="footer--copyright"><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Desarrollado por <span>Doing</span></a></p>
+                <p class="footer--copyright">© Derechos reservados 2025.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/card-test.js"></script>
+    <script defer src="js/card-test.js"></script>
+    <!-- <span class="gb-white-space">   </span> -->
 
 </body>
 </html>
