@@ -1,0 +1,21 @@
+[
+    {
+        "sectionId": "home",
+        "filename": "home"
+    },
+
+    {
+        "sectionId": "electronica",
+        "filename": "impresora"
+    },
+
+    {
+        "sectionId": "impresora",
+        "filename": "home"
+    },
+
+    {
+        "sectionId": "diseño", 
+        "filename": "impresora"
+    }
+]

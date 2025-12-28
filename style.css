@@ -637,6 +637,11 @@ body {
     cursor: pointer;
 }
 
+.gb-open-new-symbol::after {
+    content: '\21d7';
+    padding-left: 0.5rem;
+}
+
 .pos-absolute-BR {
     position: absolute;
     right: 0px;
@@ -674,7 +679,7 @@ body {
 
 /* seccion de contacto ------------------------------------------------------------------------------ */
 .contact-section-box {
-    padding: 0px 10px;
+    padding: 2rem 1rem 0rem;
 }
 
 
@@ -683,7 +688,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     justify-content: flex-start;
 
     /* display: grid; */
@@ -760,6 +765,8 @@ body {
 .titulo-index::first-letter,
 .item--title h3::first-letter,
 .item--title p::first-letter,
+.item-description--header h3::first-letter,
+.item-description--feat li::first-letter,
 .contact--text h5::first-letter,
 .subsection-title::first-letter
 { /* asegurar primera letra mayuscula */
