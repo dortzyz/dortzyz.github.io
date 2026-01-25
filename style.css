@@ -22,6 +22,8 @@ body {
     --color-hover-default: rgba(255, 255, 255, 0.15);
     --color-button-default: rgba(255, 255, 255, 0.05);
     --description-box-top-offset: 15%;
+    --color-bg-section-odd: rgb(26, 29, 41);
+    --color-bg-section-even: rgb(30,33,47,.8);
 }
 /*
 .lorem-text-88::after {
@@ -240,7 +242,7 @@ body {
     text-decoration: none;
     background-color: var(--color-background-default);
     border-radius: 70px;
-    padding: 5px; /* 0.5rem 0.8rem */
+    padding: 0px; /* 0.5rem 0.8rem */
 
     min-width: fit-content; /* mantener texto horizontal */
 
@@ -280,7 +282,7 @@ body {
 .nav-card-title {
     font-size: 16px; /* tamaño de pestañas en navbar */
     font-weight: 400;
-    padding: 5px;
+    padding: 10px;
     /* background-color: rgba(0,0,0,1); */
     border-radius: 25px;
 }
@@ -302,6 +304,17 @@ body {
     /* padding: 0rem 0rem 2rem; */
     background-color: #000000;
     padding-bottom: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    /* margin: 0px auto; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    /* align-items: center; */
+    width: 84%;
+    max-width: var(--max-page-width);
 }
 
 .main-box section:nth-child(odd){
@@ -320,14 +333,14 @@ body {
     padding-bottom: 5.5rem;
 }
 
-.main-container { 
-    max-width: var(--max-page-width);
+.main-container { /* deprecated */
+    /* max-width: var(--max-page-width); */
     margin: 0px auto;
-    padding: 1rem 1rem;
-    width: 75%;
+    /* padding: 1rem 1rem; */
+    /* width: 75%; */
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:700px) { /* deprecated */
     .main-container {
         width: auto;
     }
@@ -340,7 +353,7 @@ body {
     padding-bottom: 1rem;
     /* padding: 5.4rem 0rem 0.5rem;  */
     max-width: var(--max-page-width); /* ancho maximo de main page centrado */
-    margin: 0px auto;
+    /* margin: 0px auto; */
 
     display: flex;
     flex-direction: column;
@@ -637,10 +650,10 @@ body {
     cursor: pointer;
 }
 
-.gb-open-new-symbol::after {
+/* .gb-open-new-symbol::after {
     content: '\21d7';
     padding-left: 0.5rem;
-}
+} */
 
 .pos-absolute-BR {
     position: absolute;

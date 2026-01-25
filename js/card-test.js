@@ -167,7 +167,7 @@ function errorFun(error){
 }
 
 
-const main_container_node = "div.main-container"
+const main_container_node = "div.main-box";
 
 function readJSONData(json_file){
     //console.log("json data",json_file);
