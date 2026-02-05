@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store 0.0.1</title>
-    <link rel="icon" type="image/x-icon" href="./img/T_logoV2S.png">
+    <link rel="icon" type="image/x-icon" href="./img/Logo_tienda_v3.png">
 
     <link rel="stylesheet" href="style.css" >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <!-- cambios estables 2 -->
 <body>
@@ -19,7 +20,11 @@
             <div class="logo-box">
                 <a href="#" class="logo-container2 gb-style4button"><img src="img/T_logoV2.png" alt="logo pagina"></a>
             </div>
-            <h1 id="titulo" class="title-prime" onclick="holaMundo()">catálogo virtual</h1>
+            <div class="page-title">
+                <h1 class="title--h1" onclick="holaMundo()">catálogo virtual</h1>
+                <span>(beta)</span>
+            </div>
+            
         </div>
     </div>
     <div class="nav-box fixed-box gb-blur-effect">
@@ -42,9 +47,9 @@
         <!-- <div class="main-container"> -->
 
             <section id="home" class="section-container item-display">
-                <div class="titulo-index gb-no-display">Test de card img</div>
+                <div class="section--title gb-no-display">test de vista de cartas</div>
                 <div class="card-section-box gb-no-display">
-                    <div class="subsection-title">subtitulo de seccion</div>
+                    <div class="section--subtitle">subtitulo de seccion</div>
                     <div class="card-section-container">
                         <!-- tarjeta matriz -->
                         <div class="item-box">
@@ -161,61 +166,61 @@
                     </div>
                 </div>
                 <div class="card-section-box">
-                    <div class="subsection-title"></div>
+                    <div class="section--subtitle"></div>
                     <div class="card-section-container"></div>
-                    <!-- <div class="subsection-title">${subsection_title}</div>
+                    <!-- <div class="section--subtitle">${subsection_title}</div>
                     <div class="card-section-container"></div> -->
                 </div>
                 <div class="card-section-box">
-                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="section--subtitle">${subsection_title}</div>
                     <div class="card-section-container"></div>
                 </div>
                 <div class="card-section-box">
-                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="section--subtitle">${subsection_title}</div>
                     <div class="card-section-container"></div>
                 </div>
                 <div class="card-section-box">
-                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="section--subtitle">${subsection_title}</div>
                     <div class="card-section-container"></div>
                 </div>
                 <!-- <div class="espacio-intermedio">espacio intermedio</div> -->
             </section>
 
             <section id="electronica" class="section-container">
-                <div class="titulo-index style-border">Electrónica</div>
+                <div class="section--title style-border">Electrónica</div>
                 <div class="card-section-box">
-                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="section--subtitle">${subsection_title}</div>
                     <div class="card-section-container"></div>
                 </div>
             </section>
 
             <section id="impresora" class="section-container">
-                <div class="titulo-index style-border">Impresora 3D</div>     
+                <div class="section--title style-border">Impresora 3D</div>     
                 <div class="card-section-box">
-                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="section--subtitle">${subsection_title}</div>
                     <div class="card-section-container"></div>
                 </div>
             </section>
 
             <section id="diseño" class="section-container">
-                <div class="titulo-index style-border">Diseño 3D</div>
+                <div class="section--title style-border">Diseño 3D</div>
                 <div class="card-section-box">
-                    <div class="subsection-title">${subsection_title}</div>
+                    <div class="section--subtitle">${subsection_title}</div>
                     <div class="card-section-container"></div>
                 </div>
             </section>
 
             <section id="contacto" class="section-container">
-                <div class="titulo-index style-border">contacto</div>
+                <div class="section--title style-border">contacto</div>
                 <div class="contact-section-box">
                     <div class="contact-section-container">
                         <div class="contact--card-box gb-round-corners">
                             <div class="contact--text">
                                 <h5>
-                                    Correo electronico
+                                    correo electrónico
                                 </h5>
-                                <div>
-                                    <span>
+                                <div class="gb-select-all">
+                                    <span class="gb-flex-text-center">
                                         electroimp3d@outlook.com
                                     </span>
                                 </div>
@@ -226,10 +231,10 @@
                         <div class="contact--card-box gb-round-corners">
                             <div class="contact--text">
                                 <h5>
-                                    Whatsapp (+593)
+                                    whatsapp (+593)
                                 </h5>
-                                <div>
-                                    <span>
+                                <div class="gb-select-all">
+                                    <span class="gb-flex-text-center">
                                         099 104 6580
                                     </span>
                                 </div>
@@ -240,10 +245,10 @@
                         <div class="contact--card-box gb-round-corners">
                             <div class="contact--text">
                                 <h5>
-                                    Facebook
+                                    facebook
                                 </h5>
-                                <div>
-                                    <span>
+                                <div class="gb-select-all">
+                                    <span class="gb-flex-text-center">
                                         Electrónica e impresión 3d Cuenca
                                     </span>
                                     
@@ -256,8 +261,8 @@
                                 <h5>
                                     instagram
                                 </h5>
-                                <div>
-                                    <span>
+                                <div class="gb-select-all">
+                                    <span class="gb-flex-text-center">
                                         @electro_imp3d_cuenca 
                                     </span>
                                 </div>
@@ -269,8 +274,8 @@
                                 <h5>
                                     gitHub
                                 </h5>
-                                <div>
-                                    <span>
+                                <div class="gb-select-all">
+                                    <span class="gb-flex-text-center">
                                         https://dortzyz.github.io/
                                     </span>
                                 </div>
@@ -290,14 +295,19 @@
         </div>
         <div class="footer-box">
             <div class="footer-container">
-                <p class="footer--copyright"><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Desarrollado por <span>Doing</span></a></p>
-                <p class="footer--copyright">© Derechos reservados 2025.</p>
+                <div class="footer--last-update gb-no-display">Ultima actualización: <span>31 - 01 - 2026</span>.</div>
+                <div class="footer--legal">
+                    <a class="gb-hover-underline" href="https://dortzyz.github.io/" target="_blank" rel="noopener noreferrer">Uso y Aclaraciones</a>
+                </div>
             </div>
+        </div>
+        <div class="footer--copyright">
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Desarrollado por <span>Doing</span></a>
+            <p>© Derechos reservados 2026.</p>
         </div>
     </footer>
 
     <script defer src="js/card-test.js"></script>
-    <!-- <span class="gb-white-space">   </span> -->
 
 </body>
 </html>

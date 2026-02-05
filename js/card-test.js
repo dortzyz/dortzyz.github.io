@@ -29,6 +29,7 @@ document.addEventListener('click', function(event) {
         console.log("close show more");
         toggleTest(target.parentElement.parentElement);
     }
+    //copyContactToClipboard(target,classes)
 });
 
 function toggleTest(targetElement){
@@ -36,7 +37,7 @@ function toggleTest(targetElement){
 }
 
 const template_card_class = ".card-section-box"
-const section_title_class = ".titulo-index"
+const section_title_class = ".section--title"
 const gb_style_no_display = "gb-no-display"
 
 function holaMundo(){
@@ -289,7 +290,7 @@ function createCardBox(jsonObject,sectionId){
     
     let card_box_template =
         `<div class="card-section-box">
-            <div class="subsection-title">${title}</div>
+            <div class="section--subtitle">${title}</div>
             <div class="card-section-container">${cardsCreated}</div>
         </div>`;
 
@@ -309,30 +310,44 @@ function createItemCard(card_object){
     //console.log(card_object);
     const sku = card_object.itemSku;
     const available = card_object.itemAvailable;
-    const title = card_object.itemTitle;
-    const subtitle = card_object.itemSubtitle;
+    const title = firstLetterToUppercase(card_object.itemTitle);
+    const subtitle = firstLetterToUppercase(card_object.itemSubtitle);
     let price = card_object.price;
     let sale_price = card_object.salePrice;
     let features = card_object.itemFeat;
     let imgName = card_object.itemImg;
 
-    let availableTag = "$";
-    let showSaleTag = "gb-no-display";
+    let availableTag = "";
+    let showSaleTag = "";
     let wholeprice = 0;
     let discount = 0;
     let imgPath = "";
 
     if ( available ){
-        if ( (price > sale_price) && (sale_price > 0) ){
-            discount = (1 - (sale_price / price)) * 100;
-            //console.log(discount.toFixed(0));
-            wholeprice = price;
-            price = sale_price;
-            showSaleTag = "";
+        availableTag = "$";
+        discount = (1 - (sale_price / price)) * 100;
+        if ( discount > 99){
+            wholeprice = 0;
+            discount = 0;
+            showSaleTag = "gb-no-visible";
+        }else{
+            if ( discount <= 99 && discount >= 1 ){
+                wholeprice = price;
+                price = sale_price;
+                showSaleTag = "";
+            }
+            if ( discount < 1){
+                wholeprice = 0;
+                discount = 0;
+                showSaleTag = "gb-no-visible";
+            }
         }
     }else{
         availableTag = "No disponible";
         price = "";
+        wholeprice = 0;
+        discount = 0;
+        showSaleTag = "gb-no-visible";
     }
 
     //console.log(typeof imgName)
@@ -345,19 +360,19 @@ function createItemCard(card_object){
     }
 
     let list_html = array2htmlList(features);
-    
+    // <!-- <div class="main-container"> -->
     let item_card_template = 
         `<div class="item-box">
             <div class="item--container">
                 <div class="item--info">
                     <div class="item--img">
-                        <div class="lc-item-img-size-x">
+                        <!-- <div class="lc-item-img-size-x"> -->
                             <img src="${imgPath}" alt=" Sin imagen de ${title}">
-                        </div>
+                        <!-- </div> -->
                     </div>
                     <div class="item--title">
                         <p class="gb-truncate-text-lines-1">${subtitle}</p>
-                        <h3 class="gb-truncate-text-lines-3">${title}</h3>
+                        <h3 class="gb-truncate-text-lines-2">${title}</h3>
                     </div>
                 </div>
                 <div class="item--footer">
@@ -365,22 +380,22 @@ function createItemCard(card_object){
                         <div class="item--price">${availableTag}${price}</div>
                         <div class="gb-flex-container lc-item-sale-tag ${showSaleTag}">
                             <div class="item--wholeprice">$${wholeprice}</div>
-                            <div class="item--discount">-${discount.toFixed(0)}%</div>
+                            <div class="item--discount">-${discount.toFixed(0)} %</div>
                         </div>
                     </div>
                     
-                    <button type="button" class="btn-show-more gb-open-new-symbol">Ver mas</button>
+                    <button type="button" class="btn-show-more">Ver más</button>
                 </div>
             </div>
             <div class="hide-card item-description-box">
                 <div class="item-description--header">
                     <div class="btn-close-show-more">Cerrar</div>
-                    <div class="gb-flex-container">
+                    <div class="item-description--title">
                         <h3 class="gb-truncate-text-lines-2">${title}</h3>
                     </div>
                 </div>
                 <div class="item-description--feat">
-                    <p>Caracteristicas</p>
+                    <p>Características</p>
                     <ul>
                         ${list_html}
                     </ul>
@@ -400,6 +415,15 @@ function array2htmlList(array){
         //console.log("html: ",html);
     }
     return html
+}
+
+function firstLetterToUppercase(text){
+    //console.log(text.length)
+    let firstChar = text.slice(0,1).toUpperCase();
+    let lastText = text.slice(1,text.length);
+    //console.log(firstChar);
+
+    return firstChar + lastText
 }
 
 /*
